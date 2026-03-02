@@ -24,6 +24,7 @@ def main():
     dt = 0
 
     while True:
+        dt = clock.tick(60) / 1000
         log_state()
     
         for event in pygame.event.get():
@@ -38,7 +39,7 @@ def main():
 
         pygame.display.flip()
 
-        dt = clock.tick(60) / 1000
+        
         
 
     
